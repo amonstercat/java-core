@@ -1,4 +1,4 @@
-package Thread;
+package Thread.CreateThread;
 
 //一个java程序就是一个JVM进程，JVM启动主线程执行main方法
 // 在main()方法下又可以启动其他多个线程

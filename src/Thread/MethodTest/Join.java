@@ -1,6 +1,6 @@
 package Thread.MethodTest;
 
-public class Main {
+public class Join {
     public static void main(String[] args)  throws  InterruptedException{
       // 创建子线程
         Thread t1=new Thread(){
@@ -8,7 +8,7 @@ public class Main {
              {
                  for(int i=0;i<=100;i++)
                  {
-                     System.out.println("子线程is running"+" "+i+"%");
+                     System.out.println("子线程t1is running"+" "+i+"%");
                  }
              }
         };
