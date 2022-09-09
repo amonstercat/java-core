@@ -2,7 +2,7 @@ package Thread.CreateThread;
 
 //一个java程序就是一个JVM进程，JVM启动主线程执行main方法
 // 在main()方法下又可以启动其他多个线程
-public class Main {
+public class MainCreateThread {
     public static void main(String[] args) {
         Thread t1 = new Mythread();  //父类对象指向子类引用
         t1.start();
