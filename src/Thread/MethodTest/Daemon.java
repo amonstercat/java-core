@@ -3,10 +3,11 @@ package Thread.MethodTest;
 
 //JVM无需等待守护线程运行结束
 public class Daemon {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         God god =new God();
         Person person=new Person();
         Thread thread=new Thread(god);
+       // Thread.sleep(100);
         thread.setDaemon(true);
         thread.start();
         new Thread(person,"普通人").start();

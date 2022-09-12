@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class OperateRW {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         new Thread(()->{
              new Operator().read();
         },"A"
@@ -18,10 +18,11 @@ public class OperateRW {
             new Operator().read();
         },"B"
         ).start();
-        new Thread(()->{
-            new Operator().write();
-        },"D"
-        ).start();
+        Thread.sleep(1000);
+//        new Thread(()->{
+//            new Operator().write();
+//        },"D"
+//        ).start();
     }
 }
 

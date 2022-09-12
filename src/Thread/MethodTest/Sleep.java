@@ -6,6 +6,11 @@ public class Sleep  implements  Runnable {
 
     @Override
     public void run() {
+        try {
+            countdown();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void countdown() throws InterruptedException {
