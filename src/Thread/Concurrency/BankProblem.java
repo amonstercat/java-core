@@ -12,6 +12,7 @@ public class BankProblem {
 }
 
 class  Account{
+
      int  money;
      String  name;
 
